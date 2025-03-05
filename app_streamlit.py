@@ -6,8 +6,14 @@ import pandas as pd
 # Charger le modèle
 model = joblib.load("model.joblib")
 
+# Ajouter une image
+st.image("credit_risk_image.jpg", caption="Prédiction du Risque de Crédit")
+
 # Titre de l'application
 st.title("Prédiction du Risque de Crédit")
+
+# Sous-titre avec le nom
+st.subheader("Développé par Fatoumata SANOGO")
 
 # Entrée utilisateur
 age = st.number_input("Âge", min_value=18, max_value=100, value=30)
